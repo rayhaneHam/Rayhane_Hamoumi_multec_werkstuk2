@@ -15,6 +15,7 @@
 		ADA871E920A74C37005CD450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA871E720A74C37005CD450 /* LaunchScreen.storyboard */; };
 		ADA871F420A74C37005CD450 /* Rayhane_Hamoumi_multec_werkstuk2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA871F320A74C37005CD450 /* Rayhane_Hamoumi_multec_werkstuk2Tests.swift */; };
 		ADA871FF20A74C37005CD450 /* Rayhane_Hamoumi_multec_werkstuk2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA871FE20A74C37005CD450 /* Rayhane_Hamoumi_multec_werkstuk2UITests.swift */; };
+		ADA8721920A7936F005CD450 /* ViloStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8721820A7936F005CD450 /* ViloStation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ADA871FA20A74C37005CD450 /* Rayhane_Hamoumi_multec_werkstuk2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rayhane_Hamoumi_multec_werkstuk2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA871FE20A74C37005CD450 /* Rayhane_Hamoumi_multec_werkstuk2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rayhane_Hamoumi_multec_werkstuk2UITests.swift; sourceTree = "<group>"; };
 		ADA8720020A74C37005CD450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA8721820A7936F005CD450 /* ViloStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViloStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				ADA871DB20A74C35005CD450 /* AppDelegate.swift */,
 				ADA871DD20A74C35005CD450 /* ViewController.swift */,
+				ADA8721820A7936F005CD450 /* ViloStation.swift */,
 				ADA871DF20A74C35005CD450 /* Main.storyboard */,
 				ADA871E520A74C37005CD450 /* Assets.xcassets */,
 				ADA871E720A74C37005CD450 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA8721920A7936F005CD450 /* ViloStation.swift in Sources */,
 				ADA871DE20A74C35005CD450 /* ViewController.swift in Sources */,
 				ADA871E420A74C35005CD450 /* Rayhane_Hamoumi_multec_werkstuk2.xcdatamodeld in Sources */,
 				ADA871DC20A74C35005CD450 /* AppDelegate.swift in Sources */,

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Rayhane_Hamoumi_multec_werkstuk2
 //
-//  Created by muge sonmez on 12/05/18.
+//  Created by Rayhane Hamoumi on 12/05/18.
 //  Copyright © 2018 ehb.be. All rights reserved.
 //
 
