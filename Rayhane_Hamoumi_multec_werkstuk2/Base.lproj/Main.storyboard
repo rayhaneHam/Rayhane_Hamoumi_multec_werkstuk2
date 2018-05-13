@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F4w-Bt-UFu">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="57y-gs-PaX">
+            <objects>
+                <navigationController id="F4w-Bt-UFu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="et2-Tf-bwW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pur-TM-Yy1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pbx-fZ-mTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-870" y="134"/>
+        </scene>
+        <!--Refresh-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rayhane_Hamoumi_multec_werkstuk2" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,17 +34,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="v60-aX-uXO">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v60-aX-uXO">
                                 <rect key="frame" x="0.0" y="220" width="375" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Name" text="Country Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-yx-AB5">
-                                <rect key="frame" x="37" y="65" width="301" height="20.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Name" text="Country Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-yx-AB5">
+                                <rect key="frame" x="37" y="103" width="301" height="20.333333333333329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6c-eo-hK2">
-                                <rect key="frame" x="40" y="140" width="49" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6c-eo-hK2">
+                                <rect key="frame" x="37" y="135" width="49" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Dutch">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -36,8 +56,10 @@
                                     <action selector="Dutch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ar6-PT-fU6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-Ga-f8T">
-                                <rect key="frame" x="265" y="140" width="59" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-Ga-f8T">
+                                <rect key="frame" x="267" y="135" width="59" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="English">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -45,25 +67,27 @@
                                     <action selector="English:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1YJ-C0-f0f"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnN-ih-geO">
+                                <rect key="frame" x="0.0" y="176" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="YVJ-yx-AB5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="1M0-en-vJ5"/>
-                            <constraint firstItem="w6c-eo-hK2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9TW-3d-oSb"/>
-                            <constraint firstItem="v60-aX-uXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dcl-15-ayH"/>
-                            <constraint firstItem="s1n-Ga-f8T" firstAttribute="top" secondItem="YVJ-yx-AB5" secondAttribute="bottom" constant="54.670000000000002" id="FoD-ey-W8u"/>
-                            <constraint firstItem="w6c-eo-hK2" firstAttribute="top" secondItem="YVJ-yx-AB5" secondAttribute="bottom" constant="54.670000000000002" id="Ysx-NA-uxC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YVJ-yx-AB5" secondAttribute="trailing" constant="37" id="Zsd-qW-xW1"/>
-                            <constraint firstItem="v60-aX-uXO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cec-Wt-L5Y"/>
-                            <constraint firstItem="v60-aX-uXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="220" id="fsW-wK-5kS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s1n-Ga-f8T" secondAttribute="trailing" constant="51" id="gRt-DW-CUq"/>
-                            <constraint firstAttribute="bottom" secondItem="v60-aX-uXO" secondAttribute="bottom" id="hRQ-qf-BSU"/>
-                            <constraint firstItem="YVJ-yx-AB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="ydb-Og-KCc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Refresh" id="LpI-xB-wrS">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="QYa-1W-sYT">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="xhI-AG-fvS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="NaamLanden" destination="YVJ-yx-AB5" id="yAk-FQ-qT5"/>
+                        <outlet property="RefreshTime" destination="GnN-ih-geO" id="UK1-yR-2uD"/>
                         <outlet property="mapView" destination="v60-aX-uXO" id="J50-Id-WcW"/>
                     </connections>
                 </viewController>

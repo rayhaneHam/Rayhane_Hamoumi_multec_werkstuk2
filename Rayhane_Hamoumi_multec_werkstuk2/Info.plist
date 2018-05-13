@@ -43,5 +43,7 @@
 	</array>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 </dict>
 </plist>
