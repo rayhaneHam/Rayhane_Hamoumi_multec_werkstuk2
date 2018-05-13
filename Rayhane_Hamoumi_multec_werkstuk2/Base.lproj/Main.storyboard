@@ -19,19 +19,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="v60-aX-uXO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="220" width="375" height="592"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Name" text="Country Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-yx-AB5">
+                                <rect key="frame" x="37" y="65" width="301" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6c-eo-hK2">
+                                <rect key="frame" x="40" y="140" width="49" height="34"/>
+                                <state key="normal" title="Dutch">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Dutch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ar6-PT-fU6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-Ga-f8T">
+                                <rect key="frame" x="265" y="140" width="59" height="34"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="English:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1YJ-C0-f0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="YVJ-yx-AB5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="1M0-en-vJ5"/>
+                            <constraint firstItem="w6c-eo-hK2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9TW-3d-oSb"/>
                             <constraint firstItem="v60-aX-uXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dcl-15-ayH"/>
+                            <constraint firstItem="s1n-Ga-f8T" firstAttribute="top" secondItem="YVJ-yx-AB5" secondAttribute="bottom" constant="54.670000000000002" id="FoD-ey-W8u"/>
+                            <constraint firstItem="w6c-eo-hK2" firstAttribute="top" secondItem="YVJ-yx-AB5" secondAttribute="bottom" constant="54.670000000000002" id="Ysx-NA-uxC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YVJ-yx-AB5" secondAttribute="trailing" constant="37" id="Zsd-qW-xW1"/>
                             <constraint firstItem="v60-aX-uXO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cec-Wt-L5Y"/>
-                            <constraint firstItem="v60-aX-uXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fsW-wK-5kS"/>
+                            <constraint firstItem="v60-aX-uXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="220" id="fsW-wK-5kS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s1n-Ga-f8T" secondAttribute="trailing" constant="51" id="gRt-DW-CUq"/>
                             <constraint firstAttribute="bottom" secondItem="v60-aX-uXO" secondAttribute="bottom" id="hRQ-qf-BSU"/>
+                            <constraint firstItem="YVJ-yx-AB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="ydb-Og-KCc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="NaamLanden" destination="YVJ-yx-AB5" id="yAk-FQ-qT5"/>
                         <outlet property="mapView" destination="v60-aX-uXO" id="J50-Id-WcW"/>
                     </connections>
                 </viewController>
